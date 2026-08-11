@@ -1,0 +1,2029 @@
+/* =========================================================
+   PEWJAY OFFICIAL
+   TRAILER.CSS
+   CINEMATIC BLUE NIGHT
+   OPENING-STYLE COUNTDOWN
+   ========================================================= */
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+
+    width: 100%;
+    min-height: 100%;
+
+    font-family:
+        "Inter",
+        Arial,
+        sans-serif;
+
+    background: #020914;
+
+    color: #ffffff;
+
+}
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.trailer-page {
+
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+
+    overflow: hidden;
+
+    background: #020914;
+
+}
+
+
+/* =========================================================
+   VIDEO
+   ========================================================= */
+
+.trailer-video {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    background: #020914;
+
+}
+
+
+/* =========================================================
+   VIDEO OVERLAY
+   ========================================================= */
+
+.trailer-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(1, 8, 17, 0.52) 0%,
+            rgba(2, 14, 27, 0.08) 38%,
+            rgba(1, 7, 15, 0.92) 100%
+        );
+
+}
+
+
+/* =========================================================
+   BLUE CENTER LIGHT
+   ========================================================= */
+
+.trailer-overlay::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 50% 65%,
+            rgba(50, 180, 255, 0.15),
+            transparent 48%
+        );
+
+}
+
+
+/* =========================================================
+   VIGNETTE
+   ========================================================= */
+
+.trailer-overlay::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            transparent 38%,
+            rgba(0, 4, 10, 0.45) 100%
+        );
+
+}
+
+
+/* =========================================================
+   TOP LOGO
+   ========================================================= */
+
+.trailer-logo {
+
+    position: absolute;
+
+    z-index: 10;
+
+    top: 30px;
+    left: 5vw;
+
+    width:
+        clamp(
+            125px,
+            15vw,
+            205px
+        );
+
+}
+
+
+.trailer-logo img {
+
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 10px 30px
+            rgba(0, 0, 0, 0.65)
+        );
+
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.trailer-content {
+
+    position: absolute;
+
+    z-index: 7;
+
+    left: 5vw;
+    right: 5vw;
+    bottom: 45px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(420px, 0.8fr);
+
+    align-items: end;
+
+    gap: 70px;
+
+}
+
+
+/* =========================================================
+   LEFT SIDE
+   ========================================================= */
+
+.trailer-left {
+
+    min-width: 0;
+
+}
+
+
+/* =========================================================
+   MOVIE INFORMATION
+   ========================================================= */
+
+.trailer-movie {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+/* =========================================================
+   MOVIE LOGO
+   ========================================================= */
+
+.trailer-movie-logo {
+
+    width:
+        clamp(
+            115px,
+            13vw,
+            190px
+        );
+
+    flex-shrink: 0;
+
+}
+
+
+.trailer-movie-logo img {
+
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 12px 30px
+            rgba(0, 0, 0, 0.70)
+        );
+
+}
+
+
+/* =========================================================
+   MOVIE TEXT
+   ========================================================= */
+
+.trailer-movie-info {
+
+    min-width: 0;
+
+}
+
+
+.trailer-label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color:
+        rgba(105, 210, 255, 0.75);
+
+    font-size: 7px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+}
+
+
+.trailer-movie-info h1 {
+
+    color: #ffffff;
+
+    font-size:
+        clamp(
+            28px,
+            4vw,
+            55px
+        );
+
+    font-weight: 900;
+
+    line-height: 0.88;
+
+    letter-spacing: -3px;
+
+    text-shadow:
+        0 10px 35px
+        rgba(0, 0, 0, 0.75);
+
+}
+
+
+/* =========================================================
+   RELEASE DATE
+   ========================================================= */
+
+.trailer-release {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 14px;
+
+}
+
+
+.trailer-release span {
+
+    color:
+        rgba(
+            190,
+            225,
+            240,
+            0.42
+        );
+
+    font-size: 6px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.trailer-release strong {
+
+    color: #ffffff;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+   ========================================================= */
+
+.trailer-right {
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+}
+
+
+/* =========================================================
+   EVENT LABEL
+   ========================================================= */
+
+.trailer-event-title {
+
+    color:
+        rgba(
+            125,
+            215,
+            255,
+            0.72
+        );
+
+    font-size: 7px;
+
+    font-weight: 900;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   CINEMA BLOCK
+   ========================================================= */
+
+.trailer-cinema {
+
+    position: relative;
+
+    padding:
+        15px 0 17px;
+
+    border-top:
+        1px solid
+        rgba(
+            100,
+            210,
+            255,
+            0.20
+        );
+
+}
+
+
+.trailer-cinema:last-child {
+
+    border-bottom:
+        1px solid
+        rgba(
+            100,
+            210,
+            255,
+            0.12
+        );
+
+}
+
+
+/* =========================================================
+   CINEMA HEADER
+   ========================================================= */
+
+.trailer-cinema-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 13px;
+
+}
+
+
+.trailer-cinema-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.trailer-cinema-brand img {
+
+    width:
+        clamp(
+            50px,
+            6vw,
+            80px
+        );
+
+    max-height: 38px;
+
+    object-fit: contain;
+
+    margin-bottom: 8px;
+
+}
+
+
+.trailer-cinema-brand span {
+
+    color:
+        rgba(
+            220,
+            240,
+            250,
+            0.65
+        );
+
+    font-size: 6px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   COUNTDOWN
+   ========================================================= */
+
+.trailer-countdown {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 8px;
+
+}
+
+
+/* =========================================================
+   COUNTDOWN ITEM
+   ========================================================= */
+
+.trailer-countdown-item {
+
+    position: relative;
+
+    width: 67px;
+
+    height: 70px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-top:
+        1px solid
+        rgba(
+            100,
+            205,
+            255,
+            0.25
+        );
+
+    border-bottom:
+        1px solid
+        rgba(
+            100,
+            205,
+            255,
+            0.12
+        );
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(
+                30,
+                120,
+                180,
+                0.12
+            ),
+            rgba(
+                2,
+                15,
+                28,
+                0.25
+            )
+        );
+
+    box-shadow:
+        inset 0 1px 20px
+        rgba(
+            50,
+            170,
+            230,
+            0.025
+        );
+
+}
+
+
+/* =========================================================
+   COUNTDOWN TOP LIGHT
+   ========================================================= */
+
+.trailer-countdown-item::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -40%;
+
+    width: 180%;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #64D4FF,
+            transparent
+        );
+
+    box-shadow:
+        0 0 12px
+        rgba(
+            80,
+            205,
+            255,
+            0.45
+        );
+
+    animation:
+        trailerCountdownLine
+        4s
+        ease-in-out
+        infinite;
+
+}
+
+
+/* =========================================================
+   COUNTDOWN NUMBER
+   ========================================================= */
+
+.trailer-countdown-item strong {
+
+    position: relative;
+
+    display: block;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(
+            22px,
+            3vw,
+            34px
+        );
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    font-variant-numeric:
+        tabular-nums;
+
+    text-shadow:
+        0 0 18px
+        rgba(
+            70,
+            195,
+            255,
+            0.22
+        );
+
+}
+
+
+/* =========================================================
+   SLIDE DOWN
+   ========================================================= */
+
+.trailer-countdown-item strong.slide-down {
+
+    animation:
+        trailerCountdownSlide
+        0.65s
+        cubic-bezier(
+            0.16,
+            1,
+            0.3,
+            1
+        );
+
+}
+
+
+/* =========================================================
+   COUNTDOWN SLIDE ANIMATION
+   ========================================================= */
+
+@keyframes trailerCountdownSlide {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            translateY(-45px)
+            scale(0.92);
+
+        filter:
+            blur(6px);
+
+    }
+
+    35% {
+
+        opacity: 1;
+
+        transform:
+            translateY(8px)
+            scale(1.03);
+
+        filter:
+            blur(0);
+
+    }
+
+    60% {
+
+        transform:
+            translateY(-3px)
+            scale(0.99);
+
+    }
+
+    80% {
+
+        transform:
+            translateY(1px)
+            scale(1);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+        filter:
+            blur(0);
+
+    }
+
+}
+
+
+/* =========================================================
+   COUNTDOWN LABEL
+   ========================================================= */
+
+.trailer-countdown-item span {
+
+    margin-top: 7px;
+
+    color:
+        rgba(
+            120,
+            210,
+            255,
+            0.55
+        );
+
+    font-size: 5px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+/* =========================================================
+   SEPARATOR
+   ========================================================= */
+
+.trailer-countdown-separator {
+
+    color:
+        rgba(
+            100,
+            210,
+            255,
+            0.48
+        );
+
+    font-size: 15px;
+
+    margin-top: -12px;
+
+    animation:
+        trailerSeparatorPulse
+        2s
+        ease-in-out
+        infinite;
+
+}
+
+
+/* =========================================================
+   BOX GLOW WHEN NUMBER CHANGES
+   ========================================================= */
+
+.trailer-countdown-item:has(
+    strong.slide-down
+) {
+
+    animation:
+        countdownBoxPulse
+        0.65s
+        ease-out;
+
+}
+
+
+@keyframes countdownBoxPulse {
+
+    0% {
+
+        box-shadow:
+            inset 0 0 0
+            rgba(
+                70,
+                200,
+                255,
+                0
+            );
+
+    }
+
+    35% {
+
+        box-shadow:
+            inset 0 0 25px
+            rgba(
+                70,
+                200,
+                255,
+                0.12
+            ),
+            0 0 15px
+            rgba(
+                70,
+                200,
+                255,
+                0.08
+            );
+
+    }
+
+    100% {
+
+        box-shadow:
+            inset 0 1px 20px
+            rgba(
+                50,
+                170,
+                230,
+                0.025
+            );
+
+    }
+
+}
+
+
+/* =========================================================
+   TOP LINE ANIMATION
+   ========================================================= */
+
+@keyframes trailerCountdownLine {
+
+    0%,
+    100% {
+
+        opacity: 0.25;
+
+        transform:
+            translateX(-18px);
+
+    }
+
+    50% {
+
+        opacity: 0.85;
+
+        transform:
+            translateX(18px);
+
+    }
+
+}
+
+
+/* =========================================================
+   SEPARATOR PULSE
+   ========================================================= */
+
+@keyframes trailerSeparatorPulse {
+
+    0%,
+    100% {
+
+        opacity: 0.30;
+
+    }
+
+    50% {
+
+        opacity: 1;
+
+        text-shadow:
+            0 0 10px
+            rgba(
+                70,
+                200,
+                255,
+                0.40
+            );
+
+    }
+
+}
+
+
+/* =========================================================
+   CORNER INFORMATION
+   ========================================================= */
+
+.trailer-corner {
+
+    position: absolute;
+
+    z-index: 8;
+
+    bottom: 18px;
+
+    color:
+        rgba(
+            180,
+            220,
+            240,
+            0.30
+        );
+
+    font-size: 6px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.trailer-corner-left {
+
+    left: 5vw;
+
+}
+
+
+.trailer-corner-right {
+
+    right: 5vw;
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .trailer-content {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 25px;
+
+    }
+
+
+    .trailer-right {
+
+        width:
+            min(
+                650px,
+                100%
+            );
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .trailer-logo {
+
+        top: 20px;
+
+        left: 18px;
+
+        width: 105px;
+
+    }
+
+
+    .trailer-content {
+
+        left: 18px;
+        right: 18px;
+
+        bottom: 38px;
+
+        gap: 22px;
+
+    }
+
+
+    .trailer-movie {
+
+        align-items:
+            flex-start;
+
+        gap: 13px;
+
+    }
+
+
+    .trailer-movie-logo {
+
+        width: 72px;
+
+    }
+
+
+    .trailer-label {
+
+        font-size: 5px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .trailer-movie-info h1 {
+
+        font-size:
+            clamp(
+                19px,
+                7vw,
+                31px
+            );
+
+        letter-spacing:
+            -1.5px;
+
+    }
+
+
+    .trailer-release {
+
+        margin-top: 9px;
+
+    }
+
+
+    .trailer-release span {
+
+        font-size: 5px;
+
+    }
+
+
+    .trailer-release strong {
+
+        font-size: 7px;
+
+    }
+
+
+    .trailer-event-title {
+
+        font-size: 6px;
+
+        letter-spacing: 2.5px;
+
+    }
+
+
+    .trailer-cinema {
+
+        padding:
+            12px 0 14px;
+
+    }
+
+
+    .trailer-cinema-header {
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .trailer-cinema-brand img {
+
+        width: 48px;
+
+        max-height: 30px;
+
+    }
+
+
+    .trailer-cinema-brand span {
+
+        font-size: 5px;
+
+    }
+
+
+    .trailer-countdown {
+
+        gap: 4px;
+
+    }
+
+
+    .trailer-countdown-item {
+
+        width: 53px;
+
+        height: 62px;
+
+    }
+
+
+    .trailer-countdown-item strong {
+
+        font-size: 22px;
+
+    }
+
+
+    .trailer-countdown-item span {
+
+        margin-top: 6px;
+
+        font-size: 4px;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .trailer-countdown-separator {
+
+        font-size: 12px;
+
+        margin-top: -10px;
+
+    }
+
+
+    .trailer-corner {
+
+        bottom: 13px;
+
+        font-size: 5px;
+
+    }
+
+
+    .trailer-corner-left {
+
+        left: 18px;
+
+    }
+
+
+    .trailer-corner-right {
+
+        right: 18px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .trailer-content {
+
+        left: 14px;
+        right: 14px;
+
+        bottom: 34px;
+
+    }
+
+
+    .trailer-movie-logo {
+
+        width: 62px;
+
+    }
+
+
+    .trailer-movie-info h1 {
+
+        font-size: 18px;
+
+    }
+
+
+    .trailer-countdown-item {
+
+        width: 47px;
+
+        height: 57px;
+
+    }
+
+
+    .trailer-countdown-item strong {
+
+        font-size: 19px;
+
+    }
+
+
+    .trailer-countdown-item span {
+
+        font-size: 3.5px;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .trailer-countdown-item::before,
+    .trailer-countdown-separator,
+    .trailer-countdown-item strong.slide-down,
+    .trailer-countdown-item:has(
+        strong.slide-down
+    ) {
+
+        animation: none;
+
+    }
+
+}
+
+
+/* =========================================================
+   TOP LOGO
+   ========================================================= */
+
+.trailer-header {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    z-index: 20;
+
+    width: 100%;
+
+    padding:
+        28px 35px;
+
+    pointer-events: none;
+
+}
+
+
+.trailer-brand {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    width:
+        clamp(
+            120px,
+            14vw,
+            190px
+        );
+
+    pointer-events: auto;
+
+}
+
+
+.trailer-brand img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 8px 22px
+            rgba(0, 0, 0, 0.55)
+        );
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+.trailer-brand:hover img {
+
+    opacity: 0.85;
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .trailer-header {
+
+        padding:
+            20px 18px;
+
+    }
+
+
+    .trailer-brand {
+
+        width:
+            115px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .trailer-header {
+
+        padding:
+            17px 15px;
+
+    }
+
+
+    .trailer-brand {
+
+        width:
+            100px;
+
+    }
+
+}
+
+
+/* =========================================================
+   PEWJAY OFFICIAL
+   TRAILER.CSS
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* =========================================================
+   LARGE TABLET / SMALL DESKTOP
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .trailer-header {
+        padding: 25px 30px;
+    }
+
+    .trailer-brand {
+        width: 160px;
+    }
+
+    .trailer-bottom {
+        padding: 40px 35px;
+    }
+
+    .trailer-movie {
+        max-width: 55%;
+    }
+
+    .trailer-cinema {
+        max-width: 320px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .trailer-header {
+        padding: 22px 25px;
+    }
+
+    .trailer-brand {
+        width: 140px;
+    }
+
+
+    /* Bottom information */
+
+    .trailer-bottom {
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 35px;
+
+        padding:
+            35px 25px;
+
+    }
+
+
+    .trailer-movie {
+
+        width: 100%;
+
+        max-width: 600px;
+
+    }
+
+
+    .trailer-cinema {
+
+        width: 100%;
+
+        max-width: 500px;
+
+    }
+
+
+    /* Movie logo */
+
+    .trailer-movie-logo {
+
+        max-width: 190px;
+
+    }
+
+
+    /* Countdown */
+
+    .trailer-countdown {
+
+        gap: 8px;
+
+    }
+
+
+    .trailer-countdown-item {
+
+        min-width: 65px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* -----------------------------------------------------
+       TOP LOGO
+       ----------------------------------------------------- */
+
+    .trailer-header {
+
+        top: 0;
+
+        left: 0;
+
+        padding:
+            18px 18px;
+
+    }
+
+
+    .trailer-brand {
+
+        width:
+            115px;
+
+    }
+
+
+    /* -----------------------------------------------------
+       VIDEO
+       ----------------------------------------------------- */
+
+    .trailer-video {
+
+        position: absolute;
+
+        inset: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+    }
+
+
+    /* -----------------------------------------------------
+       DARK OVERLAY
+       ----------------------------------------------------- */
+
+    .trailer-overlay {
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0, 5, 12, 0.45),
+                rgba(0, 8, 16, 0.55) 45%,
+                rgba(0, 4, 10, 0.96) 100%
+            );
+
+    }
+
+
+    /* -----------------------------------------------------
+       BOTTOM CONTENT
+       ----------------------------------------------------- */
+
+    .trailer-bottom {
+
+        position: absolute;
+
+        left: 0;
+
+        bottom: 0;
+
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 28px;
+
+        padding:
+            30px 18px
+            35px;
+
+    }
+
+
+    /* -----------------------------------------------------
+       MOVIE INFORMATION
+       ----------------------------------------------------- */
+
+    .trailer-movie {
+
+        width: 100%;
+
+        max-width: 100%;
+
+    }
+
+
+    .trailer-movie-logo {
+
+        width:
+            min(
+                180px,
+                48vw
+            );
+
+        max-width: 180px;
+
+        margin-bottom: 12px;
+
+    }
+
+
+    .trailer-movie-title {
+
+        font-size:
+            clamp(
+                22px,
+                7vw,
+                34px
+            );
+
+        line-height: 1;
+
+    }
+
+
+    .trailer-release {
+
+        margin-top: 8px;
+
+        font-size: 8px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    /* -----------------------------------------------------
+       CINEMA SECTION
+       ----------------------------------------------------- */
+
+    .trailer-cinema {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        padding-top: 18px;
+
+        border-top:
+            1px solid
+            rgba(
+                110,
+                210,
+                255,
+                0.18
+            );
+
+    }
+
+
+    .trailer-cinema-label {
+
+        font-size: 7px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    .trailer-cinema-logo {
+
+        width:
+            min(
+                150px,
+                42vw
+            );
+
+        margin-top: 12px;
+
+    }
+
+
+    .trailer-cinema-name {
+
+        margin-top: 8px;
+
+        font-size: 9px;
+
+    }
+
+
+    /* -----------------------------------------------------
+       COUNTDOWN
+       ----------------------------------------------------- */
+
+    .trailer-countdown {
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 5px;
+
+        margin-top: 15px;
+
+        width: 100%;
+
+    }
+
+
+    .trailer-countdown-item {
+
+        flex: 1;
+
+        min-width: 0;
+
+        height: 58px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        border-top:
+            1px solid
+            rgba(
+                100,
+                205,
+                255,
+                0.22
+            );
+
+        border-bottom:
+            1px solid
+            rgba(
+                100,
+                205,
+                255,
+                0.10
+            );
+
+        background:
+            rgba(
+                10,
+                40,
+                65,
+                0.25
+            );
+
+    }
+
+
+    .trailer-countdown-item strong {
+
+        font-size:
+            clamp(
+                18px,
+                5vw,
+                27px
+            );
+
+        line-height: 1;
+
+    }
+
+
+    .trailer-countdown-item span {
+
+        margin-top: 5px;
+
+        font-size: 5px;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .trailer-countdown-separator {
+
+        font-size: 12px;
+
+        opacity: 0.6;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .trailer-header {
+
+        padding:
+            15px 14px;
+
+    }
+
+
+    .trailer-brand {
+
+        width: 100px;
+
+    }
+
+
+    .trailer-bottom {
+
+        padding:
+            25px 14px
+            28px;
+
+        gap: 22px;
+
+    }
+
+
+    .trailer-movie-logo {
+
+        width: 145px;
+
+    }
+
+
+    .trailer-movie-title {
+
+        font-size: 20px;
+
+    }
+
+
+    .trailer-release {
+
+        font-size: 7px;
+
+    }
+
+
+    .trailer-countdown {
+
+        gap: 3px;
+
+    }
+
+
+    .trailer-countdown-item {
+
+        height: 52px;
+
+    }
+
+
+    .trailer-countdown-item strong {
+
+        font-size: 17px;
+
+    }
+
+
+    .trailer-countdown-item span {
+
+        font-size: 4px;
+
+    }
+
+
+    .trailer-countdown-separator {
+
+        font-size: 10px;
+
+    }
+
+}
+
+
+/* =========================================================
+   LANDSCAPE MOBILE
+   ========================================================= */
+
+@media (max-width: 850px) and (orientation: landscape) {
+
+    .trailer-header {
+
+        padding:
+            12px 18px;
+
+    }
+
+
+    .trailer-brand {
+
+        width: 100px;
+
+    }
+
+
+    .trailer-bottom {
+
+        display: grid;
+
+        grid-template-columns:
+            1fr 1fr;
+
+        align-items: end;
+
+        gap: 25px;
+
+        padding:
+            20px 25px;
+
+    }
+
+
+    .trailer-movie {
+
+        max-width: 100%;
+
+    }
+
+
+    .trailer-cinema {
+
+        max-width: 100%;
+
+        padding-top: 0;
+
+        border-top: none;
+
+    }
+
+
+    .trailer-movie-logo {
+
+        max-width: 130px;
+
+    }
+
+
+    .trailer-movie-title {
+
+        font-size: 22px;
+
+    }
+
+
+    .trailer-countdown-item {
+
+        height: 50px;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .trailer-brand img,
+    .trailer-countdown-item,
+    .trailer-video {
+
+        animation: none !important;
+
+        transition: none !important;
+
+    }
+
+}

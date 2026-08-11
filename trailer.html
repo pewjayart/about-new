@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#020914"
+    >
+
+    <title>
+        The Angry Birds Movie 3 — PewJay Official
+    </title>
+
+
+    <!-- =====================================================
+         FAVICON
+         ===================================================== -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/logo/favicon.png"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="images/logo/favicon.png"
+    >
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+         ===================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         FONT AWESOME
+         ===================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         TRAILER CSS
+         ===================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/trailer.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         TRAILER HERO
+         ===================================================== -->
+
+    <main class="trailer-page">
+
+
+        <!-- =================================================
+             MP4 BACKGROUND
+             ================================================= -->
+
+        <video
+            id="trailer-video"
+            class="trailer-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+            poster="images/hero-bg.jpg"
+        >
+
+            <source
+                src="images/abm3.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support
+            HTML5 video.
+
+        </video>
+
+
+        <!-- =================================================
+             DARK OVERLAY
+             ================================================= -->
+
+        <div
+            class="trailer-overlay"
+            aria-hidden="true"
+        ></div>
+
+
+        <!-- =================================================
+             BLUE AMBIENT LIGHT
+             ================================================= -->
+
+        <div
+            class="trailer-light trailer-light-one"
+            aria-hidden="true"
+        ></div>
+
+        <div
+            class="trailer-light trailer-light-two"
+            aria-hidden="true"
+        ></div>
+
+
+        <!-- =================================================
+             TOP LOGO
+             ================================================= -->
+
+        <header class="trailer-header">
+
+            <a
+                href="index.html"
+                class="trailer-brand"
+                aria-label="PewJay Official Home"
+            >
+
+                <img
+                    src="images/name.png"
+                    alt="PewJay Official"
+                >
+
+            </a>
+
+        </header>
+
+
+        <!-- =================================================
+             BOTTOM CONTENT
+             ================================================= -->
+
+        <section class="trailer-content">
+
+
+            <!-- =================================================
+                 LEFT SIDE — MOVIE
+                 ================================================= -->
+
+            <div class="trailer-left">
+
+
+                <!-- MOVIE INFORMATION -->
+
+                <div class="trailer-movie">
+
+
+                    <!-- MOVIE LOGO -->
+
+                    <div class="trailer-movie-logo">
+
+                        <img
+                            src="images/logo-movie.png"
+                            alt="The Angry Birds Movie 3"
+                        >
+
+                    </div>
+
+
+                    <!-- MOVIE DETAILS -->
+
+                    <div class="trailer-movie-info">
+
+                        <span class="trailer-label">
+                            NEW TRAILER
+                        </span>
+
+
+                        <h1>
+                            THE ANGRY BIRDS MOVIE 3
+                        </h1>
+
+
+                        <div class="trailer-release">
+
+                            <span>
+                                RELEASE DATE
+                            </span>
+
+                            <strong>
+                                DECEMBER 23, 2026
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 RIGHT SIDE — CINEMA INFORMATION
+                 ================================================= -->
+
+            <div class="trailer-right">
+
+
+                <!-- =================================================
+                     THIS THEATER
+                     ================================================= -->
+
+                <div class="trailer-cinema">
+
+
+                    <span class="trailer-label">
+                        THIS THEATER
+                    </span>
+
+
+                    <div class="trailer-countdown">
+
+                        <div class="trailer-countdown-item">
+
+                            <strong id="theater-days">
+                                00
+                            </strong>
+
+                            <span>
+                                DAYS
+                            </span>
+
+                        </div>
+
+
+                        <div class="trailer-countdown-item">
+
+                            <strong id="theater-hours">
+                                00
+                            </strong>
+
+                            <span>
+                                HOURS
+                            </span>
+
+                        </div>
+
+
+                        <div class="trailer-countdown-item">
+
+                            <strong id="theater-minutes">
+                                00
+                            </strong>
+
+                            <span>
+                                MINUTES
+                            </span>
+
+                        </div>
+
+
+                        <div class="trailer-countdown-item">
+
+                            <strong id="theater-seconds">
+                                00
+                            </strong>
+
+                            <span>
+                                SECONDS
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     SOUTHWOODS CINEMAS
+                     ================================================= -->
+
+                <div class="trailer-cinema trailer-southwoods">
+
+
+                    <!-- CINEMA BRAND -->
+
+                    <div class="trailer-cinema-brand">
+
+                        <img
+                            src="images/MegCinemas.png"
+                            alt="Southwoods Cinemas"
+                        >
+
+
+                        <div>
+
+                            <span class="trailer-label">
+                                THIS SOUTHWOODS CINEMAS
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- COUNTDOWN -->
+
+                    <div class="trailer-countdown">
+
+                        <div class="trailer-countdown-item">
+
+                            <strong id="cinema-days">
+                                00
+                            </strong>
+
+                            <span>
+                                DAYS
+                            </span>
+
+                        </div>
+
+
+                        <div class="trailer-countdown-item">
+
+                            <strong id="cinema-hours">
+                                00
+                            </strong>
+
+                            <span>
+                                HOURS
+                            </span>
+
+                        </div>
+
+
+                        <div class="trailer-countdown-item">
+
+                            <strong id="cinema-minutes">
+                                00
+                            </strong>
+
+                            <span>
+                                MINUTES
+                            </span>
+
+                        </div>
+
+
+                        <div class="trailer-countdown-item">
+
+                            <strong id="cinema-seconds">
+                                00
+                            </strong>
+
+                            <span>
+                                SECONDS
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =================================================
+             FOOTER CORNERS
+             ================================================= -->
+
+        <div class="trailer-corner trailer-corner-left">
+
+            PEWJAY OFFICIAL
+
+        </div>
+
+
+        <div class="trailer-corner trailer-corner-right">
+
+            2026
+
+        </div>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script
+        src="js/trailer.js"
+    ></script>
+
+
+</body>
+
+</html>
