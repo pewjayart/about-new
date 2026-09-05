@@ -112,6 +112,7 @@ const theaterReleaseDate =
 
 const southwoodsReleaseDate =
     new Date(
+        "2027-01-09T12:00:00+08:00"
         
     );
 
